@@ -19,7 +19,6 @@ export default function Register() {
     console.log('data', data);
     try {
       await api.post('user', data);
-      alert(`Usuário Cadastrado Com sucesso!`);
       history.push('/thankyou');
     } catch (err) {
       alert('Erro ao cadastar Usuário');
